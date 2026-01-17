@@ -1,0 +1,9 @@
+<!-- /views/posts/show.ejs -->
+
+<% layout('layouts/boilerplate') %>
+
+<b>Creator - <%= foundPost.creator.username %></b>
+<h3><%= foundPost.title %></h3>
+<p><%= foundPost.description %></p>
+
+<a href="/posts/<%= foundPost._id %>/edit">Edit Post</a>

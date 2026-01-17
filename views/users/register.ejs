@@ -1,0 +1,16 @@
+<!-- /view/users/register.ejs -->
+
+<% layout('layouts/boilerplate') %>
+
+<form action="/register" method="POST">
+	<label for="username">Username:</label>
+	<input type="text" name="username" id="username">
+
+	<label for="passwod">Password:</label>
+	<input type"password name="password" id="password">
+
+	<label for="email">Email:</label>
+	<input type="email" name="email" id="email">
+
+	<button>Submit</button>
+</form>

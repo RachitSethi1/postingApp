@@ -1,0 +1,11 @@
+<!-- /views/posts/index.ejs -->
+
+<% layout('layouts/boilerplate') %>
+
+<a href="/posts/new">Create New Post</a>
+
+<ul>
+	<% for (post of allPosts) { %>
+		<li><a href="/posts/<%= post._id %>"><%= post.title %> - <b><%= post.creator.username %></b></a></li>
+	<% } %>
+</ul>
